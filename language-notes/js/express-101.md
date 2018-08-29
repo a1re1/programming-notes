@@ -1,7 +1,10 @@
 # Express Framework
 
+## Sample Code
 const express = require('express'); // class
 const app = express(); // Object
+
+app.use(express.json()); //processes json
 
 app.get('/', (req, res) =>{ // establish an endpoint
     res.send('Hello World');
@@ -20,3 +23,18 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => console.log('Listening on port ${port}...'));
 
 ** Look up nodemon vs gulp, do they do the same thing? which is better?
+
+## Response Codes
+1xx Informational
+2xx Success
+3xx Rediirection
+4xx Client Error
+5xx Server Error
+
+### Common Response Codes
+200 OK; 201 Created; 204 No Content;
+304 Not Modified;
+400 Bad Request; 401 Unauthorized; 403 Forbidded; 404 Not Found; 409 Conflict;
+500 Internal Server Error;
+
+### Other response codes can be found [here](https://www.restapitutorial.com/httpstatuscodes.html).

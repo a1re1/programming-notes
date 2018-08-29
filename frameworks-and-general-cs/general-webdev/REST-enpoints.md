@@ -11,3 +11,6 @@
 |POST()|create|
 |DELETE()|remove|
 |PUT()|update/replace|
+
+## Testing
+You can manually test services using chrome extension 'PostMan'
