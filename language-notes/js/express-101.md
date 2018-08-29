@@ -25,6 +25,9 @@ app.listen(port, () => console.log('Listening on port ${port}...'));
 ```
 
 ** Look up NodeMon vs gulp, do they do the same thing? which is better?
+** Joi module is commonly used for input validation/error handling
+when sending status message make sure to return.
+
 
 ## Response Codes
 1xx Informational
