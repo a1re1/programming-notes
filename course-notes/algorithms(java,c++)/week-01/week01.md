@@ -3,9 +3,9 @@
 Components of a computer:
   - CPU
     - Control Unit <-> Data Path
-    |CU Uses|DP Uses|
+    | CU Uses | DP Uses |
     |---|---|
-    |gives instructions to data path; what to do, when to do it, what data to work with|moves, stores, and manipulates user data|
+    | gives instructions to data path; what to do, when to do it, what data to work with | moves, stores, and manipulates user data |
 
   - Memory
   - Input
