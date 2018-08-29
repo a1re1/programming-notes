@@ -1,4 +1,6 @@
-# Why do I need to do this?
+# Node.js General Notes
+
+## Why do I need to do this?
 Node requires 'http' module by default as part of the library in order to run a node server
 
 require({module-name}) keyword used to import node modules for use in different modules
@@ -6,7 +8,7 @@ generally store require object as const object
 
 ES6 = ECMAScript 6
 
-# Common modules/functions
+## Common modules/functions
 'fs' file-system used to:
  - read
  - create
@@ -31,12 +33,12 @@ var variable = "String"
 console.log(`Message ${variable}`);
 
 
-# Helpful methods
+## Helpful methods
 console.log("");
 JSON.stringify();
 
 
-# Events
+## Events
 'events' module
 const EventEmitter = require('events') // Class
 const emitter = new EventEmitter(); // object
@@ -50,7 +52,7 @@ emitter.emit('messageLogged', {id: 1, url: 'http://'}); // event will be raised,
 emitter object should only be declared once in project
 http.server is an EventEmitter
 
-# Classes
+## Classes
 class ClassName{ //extends EventEmitter
   function(){
 
@@ -58,5 +60,7 @@ class ClassName{ //extends EventEmitter
 }
 
 
-# Practical examples
+## Practical examples
 Express.js is more practical for servers than building out your own app.js to handle routes
+
+## Gulp
