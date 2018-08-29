@@ -3,7 +3,7 @@
 Components of a computer:
   - CPU
     - Control Unit <-> Data Path
-    
+
     | CU Uses | DP Uses |
     |---------|---------|
     | gives instructions to data path; what to do, when to do it, what data to work with | moves, stores, and manipulates user data |
@@ -23,6 +23,7 @@ Machine Language(ML) is a binary language used by the hardware to run programs
   - Instruction set architecture; ISA
 
 MIPS:
+
 |opcode|operand|operand|operand|code|opcode|
 |---|---|---|---|---|---|
 |opcode|source1|source2|dest|code|opcode|
