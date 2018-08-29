@@ -6,6 +6,7 @@ Types can be misused
 
 ## Basic Scalar types:
 |type	|description	|size|
+|---|---|---|
 |int	|Integers	|4 bytes*|
 |float	|floating point	|4 bytes|
 |double	|floating point	|8 bytes|
@@ -20,6 +21,7 @@ Type specifiers:
 		○ size, sign, scope
 
 |type	|min size|
+|---|---|
 |short int |2 byte|
 |int	|4 bytes*
 |long int	|8 bytes
