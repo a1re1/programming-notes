@@ -124,7 +124,6 @@ strtol(string, NULL, {base});	str to long we use base 10
 
 int main(void) {
 
-
   int x, y;
 	char buffer[100];
 
