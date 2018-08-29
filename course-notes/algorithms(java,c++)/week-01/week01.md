@@ -39,6 +39,7 @@ Assembly Language:
 
 ISA:
 CISC |------------------------------------------------------| RISC
+
 Complex instruction set computer| reduced instruction set computer
 
 CISC:
