@@ -4,9 +4,10 @@
 
 
 ## Routes
-|Route| What is it used for?|
+
+|Route|What is it used for?|
 |---|---|
-|GET()|
-|POST()|
-|DELETE()|
-|PUT()|
+|GET()|read|
+|POST()|create|
+|DELETE()|remove|
+|PUT()|update/replace|
