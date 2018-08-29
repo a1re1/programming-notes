@@ -13,9 +13,10 @@ Types can be misused
 |char	|ascii char	|1 byte|
 |bool	|c99 added 1bit boolean	|4 bytes|
 |void*	|address	|4/8 bytes|
+
 *depends on architecture 64bit vs 32bit
 
-Type specifiers:
+## Type specifiers:
 	- There is a tradeoff between representational capacity of a variable and the memory requirement
 	- Three axes:
 		○ size, sign, scope
@@ -31,7 +32,7 @@ Type specifiers:
 an 8-bit integer type has 256 possible combinations bitwise
 integer types have a signed bit by default
 
-Control flow:
+## Control flow:
 	- if statements
 	- switch statements
 	- ternary statements
@@ -79,9 +80,60 @@ echo {input} | {program}	simulate sending input by piping into the program
 
 look up any C function with: man {function}
 
-Arrays
+## Arrays
 	- Arrays are composite data types
 	- elements of an array are contiguous in memory
 	- an array variable contains the address of the first element
 	- cannot be returned from functions
-cannot be resized
+  - cannot be resized
+
+# Arrays Uses
+Commandline Argments
+int main(int argc, char **argv){...}
+int main(int argc, char *argv[]){...}
+
+|g	|o	|o	|d	|\0|
+|a	|r	|e	|\0|
+|d	|o	|g	|s	\0|
+|m	|i	|m	|i	|c	|\0|
+
+3 - 2- 1 - 0 : Array positions top - bottom
+\0 is Nul Character
+
+**Not generally a good idea to use sizeof() on an array
+**Printf stops when it sees nul terminator in an array
+you can use quotation marks (") to uses spaces in command line arguments
+
+`` used for bash substitution in command line arguments
+
+single quotes (' ') are used for characters instead of strings
+
+ASCII value of Nul is 0
+
+## Pointer Arithmetic
+Pointers store addresses so adding a number to an address will start at the initial address plus the arithmetic operation
+
+fgets(buffer, buffsize, stdin);
+
+io redirection | piping data into the stdin of a program
+
+strtol(string, NULL, {base});	str to long we use base 10
+
+int main(void) {
+	int x, y;
+	char buffer[100];
+
+	printf("enter first number: "
+	fgets(buffer, 100, stdin);
+	x = strtol(buffer, NULL, 10);
+	printf("number was %d. \n", x);
+
+	printf("enter second number: ");
+	fgets(buffer, 100, stdin);
+	y = strtol(buffer, NULL, 10);
+	printf("number was %d. \n", y);
+
+	printf("product is %d", x *y);
+}
+
+strtol stops on non numbers
