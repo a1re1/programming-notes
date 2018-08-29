@@ -15,5 +15,8 @@ app.get('/api/courses', (req, res) +> {
 
 // establish environment variable
 const port = process.env.PORT || 3000;
+
 // we are establishing an endpoint on the port
 app.listen(port, () => console.log('Listening on port ${port}...'));
+
+** Look up nodemon vs gulp, do they do the same thing? which is better?
