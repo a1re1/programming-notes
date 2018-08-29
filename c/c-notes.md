@@ -93,8 +93,11 @@ int main(int argc, char **argv){...}
 int main(int argc, char *argv[]){...}
 
 |g	|o	|o	|d	|\0|
+
 |a	|r	|e	|\0|
+
 |d	|o	|g	|s	\0|
+
 |m	|i	|m	|i	|c	|\0|
 
 3 - 2- 1 - 0 : Array positions top - bottom
@@ -120,7 +123,9 @@ io redirection | piping data into the stdin of a program
 strtol(string, NULL, {base});	str to long we use base 10
 
 int main(void) {
-	int x, y;
+
+
+  int x, y;
 	char buffer[100];
 
 	printf("enter first number: "
