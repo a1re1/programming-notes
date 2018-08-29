@@ -1,17 +1,17 @@
-#C Basics
-Variables and Data Types:
+# C Basics
+## Variables and Data Types:
 C is statically typed; types are known at compile time
 C is also weakly typed; types can be changed using typecasting
 Types can be misused
 
-Basic Scalar types:
-type	description	size
-int	Integers	4 bytes*
-float	floating point	4 bytes
-double	floating point	8 bytes
-char	ascii char	1 byte
-bool	c99 added 1bit boolean	4 bytes
-void*	address	4/8 bytes
+## Basic Scalar types:
+|type	|description	|size|
+|int	|Integers	|4 bytes*|
+|float	|floating point	|4 bytes|
+|double	|floating point	|8 bytes|
+|char	|ascii char	|1 byte|
+|bool	|c99 added 1bit boolean	|4 bytes|
+|void*	|address	|4/8 bytes|
 *depends on architecture 64bit vs 32bit
 
 Type specifiers:
@@ -20,15 +20,10 @@ Type specifiers:
 		○ size, sign, scope
 
 |type	|min size|
-|---|---|
 |short int |2 byte|
-|---|---|
 |int	|4 bytes*
-|---|---|
 |long int	|8 bytes
-|---|---|
-|long double	|8/16 bytes*
-|---|---|
+|long double	|8/16 bytes*|
 
 8 bits = 1 byte
 an 8-bit integer type has 256 possible combinations bitwise
