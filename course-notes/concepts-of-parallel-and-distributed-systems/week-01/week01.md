@@ -44,3 +44,33 @@ Packet switching uses store-and-forward strategy: entire packet must arrive at r
 - dedicated resources
 - guaranteed performance
 - segment is idle if not being used
+
+FDM vs TDM
+
+Packet Switching Allows more users on a network at a time than circuit Switching
+
+## Four Sources of Packet Delay
+Nodal Processing
+  - process header, check for bit errors, determine output to send to (ms to microseconds)
+
+Transmission
+  - L/R the speed at which the node can transfer the packets onto the communication channel
+
+Propogation
+  - the time it takes a packet to move from one point to another (roughly the speed of an electron)
+
+Queueing Delay
+  - time waiting for transmission in the buffer
+
+
+  - R: link Bandwidth
+  - L: packet length
+  - a: average packet arrival strategy
+
+
+  - La/R ~ 0: avg. queueing delay small
+  - La/R -> 1: avg queueing delay large
+  - La/R > 1: more "work" arriving than can be serviced (near infinite average delay)
+
+"Real Internet Delays and Routes"
+- traceroute program provides delay measurement from source to router along end-end Internet path towards destination.
