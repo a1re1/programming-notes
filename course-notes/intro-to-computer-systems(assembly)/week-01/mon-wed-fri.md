@@ -53,3 +53,18 @@ RISC:
   - Does not necessarily mean less instructions
   - MIPS is a RISC language
   - PowerPC is RISC similar but has more operating instructions than x86
+
+## Execution Time = InstrCount (IC) * Time for each instruction (t)
+  - t = Cycles per instruct (CPI) * Clock cycle time (CCT)
+  - IC is dependent on ISA: complex => lower IC
+  - CPI is measure of  # sequential steps to perform instruction
+  - CCT is based on size of chip and complexity of processing
+
+## MIPS - R2000
+  - load/store Machine (only load and store instructions can access memory)
+  - all other instructions have registers
+  - 32 32-bit registers are given in manipulates
+  - $0...$31
+  - all instructions must fit on one line
+  - coding standard (must not go over 80 char line length)
+  - [label:][opcode[operands][,operand]...][#comment]
